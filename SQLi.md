@@ -18,3 +18,10 @@ set%20@x=0x73656c65637420736c656570283130293b;prepare%20a%20from%20@x;execute%20
 update(user)set`password`='1'where`id`=1;
 ```
 
+## json_encode
+
+json_encode的时候会转义`\`，从而导致单引号逃逸，产生sql注入
+
+## json_decode
+
+json_decode的时候会进行unicode解码，可以通过传入`\u003d`之类的unicode字符绕过waf

@@ -25,3 +25,10 @@ json_encode的时候会转义`\`，从而导致单引号逃逸，产生sql注入
 ## json_decode
 
 json_decode的时候会进行unicode解码，可以通过传入`\u003d`之类的unicode字符绕过waf
+
+## innodb
+
+- mysql>5.7
+- 数据库引擎是innodb
+
+可以通过`mysql.innodb_table_stats`查询表名

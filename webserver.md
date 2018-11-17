@@ -19,3 +19,6 @@ string(19) "localhost, evalcode"
 string(8) "evalcode"
 ```
 
+## $_SERVER['PHP_SELF']
+
+$_SERVER[‘PHP_SELF’] 可伪造
